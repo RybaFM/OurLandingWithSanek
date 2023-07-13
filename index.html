@@ -144,10 +144,24 @@
                     <div class="container-xxl p-5 bg-dark d-flex justify-content-between flex-wrap flex-column">
                         <div id="resultMessage"></div>
                         <form id="emailForm">
-                            <input type="text" name="name" placeholder="Ваше имя" required>
-                            <input type="email" name="email" placeholder="Ваш Email" required>
-                            <textarea name="message" placeholder="Сообщение" required></textarea>
-                            <button type="submit">Отправить</button>
+                            <div class="form-group mb-3">
+                                <p class="text-white mb-0">Your name</p>
+                                <input class="form-control border-bottom bg-dark text-white" type="text" name="name"
+                                    placeholder="Your name" required>
+                            </div>
+                            <div class="form-group mb-3">
+                                <p class="text-white mb-0">Your email</p>
+                                <input class="form-control border-bottom bg-dark text-white" type="email" name="email"
+                                    placeholder="Your email" required>
+                            </div>
+                            <div class="form-group mb-5">
+                                <p class="text-white mb-0">Message</p>
+                                <textarea class="form-control border-bottom bg-dark text-white" name="message"
+                                    placeholder="Message" required></textarea>
+                            </div>
+                            <div class="text-center form-group">
+                                <button type="submit" class="btn btn-primary btn-block" style="width:100%">Send</button>
+                            </div>
                         </form>
                     </div>
                 </div>
