@@ -31,7 +31,7 @@
                             <h5><a class="nav-link text-white" href="#Process">The process</a></h5>
                         </li>
                         <li class="nav-item">
-                            <h5><a class="nav-link text-white" href="#contacts">Контакти</a></h5>
+                            <h5><a class="nav-link text-white" href="#Contact">Contact</a></h5>
                         </li>
                     </ul>
                 </div>
@@ -60,6 +60,36 @@
                             eget enim fermentum consequat."</h4>
                     </div>
                 </div>
+                <iframe src="https://deversatorg.github.io/comino-v1_0-release/" width="600px" height="800px"
+                    id="exampleSite"></iframe>
+                <div id="scrollIcon" class="scrollIconClass"
+                    style="display: none; position: fixed; bottom: 20px; right: 20px; text-align: right;">
+                    <a href="#WhoAreWe"><button style="color:black;background-color:rgb(103, 0, 0); height:50px; width:50px;font-size: larger;" class="rounded-circle">
+                        👇
+                    </button></a>
+                </div>
+                <script>
+                    function handleIntersection(entries) {
+                        entries.forEach(function (entry) {
+                            if (entry.isIntersecting) {
+                                document.getElementById("scrollIcon").style.display = "block";
+                                console.log("pon");
+                            } else {
+                                document.getElementById("scrollIcon").style.display = "none";
+                                console.log("nipon");
+                            }
+                        });
+                    }
+
+                    var options = {
+                        root: null,
+                        rootMargin: "0px",
+                        threshold: 0
+                    };
+
+                    var observer = new IntersectionObserver(handleIntersection, options);
+                    observer.observe(document.getElementById("exampleSite"));
+                </script>
             </div>
         </div>
     </section>
@@ -78,6 +108,14 @@
                         <div class="" style="margin-right:15px; margin-bottom:40px">
                             <img style="height:150px; margin-bottom:10px;" src="images\20230702_175801.jpg"
                                 class="rounded-circle">
+                            <a href="https://www.instagram.com/yaroslav.ryabikov/"><img
+                                    style="height:50px; margin-bottom:10px;" src="images\instaImage.png"
+                                    class="rounded-circle border-black employeeLink"></a>
+                            <a href="https://t.me/RybaFM"><img style="height:50px; margin-bottom:10px;"
+                                    src="images\telegram-icon-512x512-06dzxbpj.png"
+                                    class="rounded-circle border-black employeeLink"></a>
+                            <a href="https://github.com/RybaFM"><img style="height:50px; margin-bottom:10px;"
+                                    src="images\25231.png" class="rounded-circle border-black employeeLink"></a>
                             <h3 class="text-white" style="margin-bottom: 10px;"><b>Yaroslav Riabikov<b></h3>
                             <h6 class="text-white">Languages: C#, JS, TS, Python; Frontend developer(Angular, HTML,
                                 CSS), Backend developer(ASP.NET, Blazor)</h6>
@@ -85,6 +123,14 @@
                         <div class="">
                             <img style="height:150px; margin-bottom:10px;" src="images\20230702_175801.jpg"
                                 class="rounded-circle">
+                            <a href="https://www.instagram.com/_highground_key"><img
+                                    style="height:50px; margin-bottom:10px;" src="images\instaImage.png"
+                                    class="rounded-circle border-black employeeLink"></a>
+                            <a href="https://t.me/deversatorg"><img style="height:50px; margin-bottom:10px;"
+                                    src="images\telegram-icon-512x512-06dzxbpj.png"
+                                    class="rounded-circle border-black employeeLink"></a>
+                            <a href="https://github.com/deversatorg"><img style="height:50px; margin-bottom:10px;"
+                                    src="images\25231.png" class="rounded-circle border-black employeeLink"></a>
                             <h3 class="text-white" style="margin-bottom: 10px;"><b>Alex Leguenko<b></h3>
                             <h6 class="text-white">Languages: C#, JS, TS, Python; Frontend developer(Angular, HTML,
                                 CSS), Backend developer(ASP.NET, Blazor)</h6>
@@ -130,14 +176,14 @@
             </div>
         </div>
     </section>
-    <section class="bg-dark" style="font-family: 'Courier New', Courier, monospace;" id="Process">
+    <section class="bg-dark" style="font-family: 'Courier New', Courier, monospace;" id="Contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
                     <div class="container-xxl p-5 bg-dark">
                         <h3 class="text-white">Shoot us a message</h3>
                         <hr style="width: 10%; border: none; border-top: 3px solid rgb(255, 0, 0);">
-                        <h2 class="text-white"><b>HZ che tut pisat</b></h2>
+                        <h2 class="text-white"><b>Share your ideas with us</b></h2>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -224,6 +270,7 @@
         // });
 
     </script>
+
 </body>
 
 </html>

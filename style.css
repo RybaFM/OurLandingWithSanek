@@ -6,3 +6,13 @@
 ::placeholder {
     color: #ffffff;
 }
+.employeeLink:hover{
+    background-color: yellow;
+}
+.employeeLink{
+    background-color:white;
+    transition: background-color 0.5s ease-in-out;
+}
+.scrollIconClass{
+    transition: display 0.5s ease-in-out;
+}
