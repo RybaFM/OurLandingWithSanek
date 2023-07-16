@@ -44,55 +44,6 @@
             </div>
         </div>
     </header>
-    <section class="bg-dark" style="font-family: 'Courier New', Courier, monospace;" id="OurWork">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="container-xxl p-5 bg-dark">
-                        <h3 class="text-white">Our work</h3>
-                        <hr style="width: 10%; border: none;border-top: 3px solid rgb(255, 0, 0);">
-                        <h2 class="text-white"><b>Let's see what's new</b></h2>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="container-xxl p-5 bg-dark">
-                        <h4 class="text-white">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut mi
-                            eget enim fermentum consequat."</h4>
-                    </div>
-                </div>
-                <iframe src="https://deversatorg.github.io/comino-v1_0-release/" width="600px" height="800px"
-                    id="exampleSite"></iframe>
-                <div id="scrollIcon" class="scrollIconClass"
-                    style="display: none; position: fixed; bottom: 20px; right: 20px; text-align: right;">
-                    <a href="#WhoAreWe"><button style="color:black;background-color:rgb(103, 0, 0); height:50px; width:50px;font-size: larger;" class="rounded-circle">
-                        👇
-                    </button></a>
-                </div>
-                <script>
-                    function handleIntersection(entries) {
-                        entries.forEach(function (entry) {
-                            if (entry.isIntersecting) {
-                                document.getElementById("scrollIcon").style.display = "block";
-                                console.log("pon");
-                            } else {
-                                document.getElementById("scrollIcon").style.display = "none";
-                                console.log("nipon");
-                            }
-                        });
-                    }
-
-                    var options = {
-                        root: null,
-                        rootMargin: "0px",
-                        threshold: 0
-                    };
-
-                    var observer = new IntersectionObserver(handleIntersection, options);
-                    observer.observe(document.getElementById("exampleSite"));
-                </script>
-            </div>
-        </div>
-    </section>
     <section class="bg-dark" style="font-family: 'Courier New', Courier, monospace;" id="WhoAreWe">
         <div class="container">
             <div class="row">
@@ -132,11 +83,99 @@
                             <a href="https://github.com/deversatorg"><img style="height:50px; margin-bottom:10px;"
                                     src="images\25231.png" class="rounded-circle border-black employeeLink"></a>
                             <h3 class="text-white" style="margin-bottom: 10px;"><b>Alex Leguenko<b></h3>
-                            <h6 class="text-white">Languages: C#, JS, TS, Python; Frontend developer(Angular, HTML,
-                                CSS), Backend developer(ASP.NET, Blazor)</h6>
+                            <div>
+                                <h6 class="text-white">I’m a strong junior .NET dev looking for new job
+                                    opportunities, where I can improve my skills and grow
+                                    as an engineer. in my spare time I also work on my own
+                                    projects, such as applications, e-commerce sites and
+                                    games.</h6>
+                                <div id="hiddenPortfolio" style="display: none;">
+                                    <h6 class="text-white">I’m a strong junior .NET dev looking for new job
+                                        opportunities, where I can improve my skills and grow
+                                        as an engineer. in my spare time I also work on my own
+                                        projects, such as applications, e-commerce sites and
+                                        games.</h6>
+                                    <h6 class="text-white">I’m a strong junior .NET dev looking for new job
+                                        opportunities, where I can improve my skills and grow
+                                        as an engineer. in my spare time I also work on my own
+                                        projects, such as applications, e-commerce sites and
+                                        games.</h6>
+                                    <h6 class="text-white">I’m a strong junior .NET dev looking for new job
+                                        opportunities, where I can improve my skills and grow
+                                        as an engineer. in my spare time I also work on my own
+                                        projects, such as applications, e-commerce sites and
+                                        games.</h6>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" id="toggleButton" class="rounded-circle bg-dark border" onclick="toggleVisibility()" style="color:white;height:35px; width:35px;font-size: larger;border-color: black;"><p id="toggleButtonText" style="transform: rotate(90deg);">▶</p></button>
+                                </div>
+                                <script>
+                                    function toggleVisibility() {
+                                        var hiddenContent = document.getElementById("hiddenPortfolio");
+                                        var toggleButton = document.getElementById("toggleButton");
+                                        var toggleButtonText = document.getElementById("toggleButtonText");
+                                        if (hiddenContent.style.display === "none") {
+                                            hiddenContent.style.display = "block";
+                                            toggleButtonText.style.transform = "rotate(270deg)";
+                                        } else {
+                                            hiddenContent.style.display = "none";
+                                            toggleButtonText.style.transform = "rotate(90deg)";
+                                        }
+                                    }
+                                </script>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-dark" style="font-family: 'Courier New', Courier, monospace;" id="OurWork">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="container-xxl p-5 bg-dark">
+                        <h3 class="text-white">Our work</h3>
+                        <hr style="width: 10%; border: none;border-top: 3px solid rgb(255, 0, 0);">
+                        <h2 class="text-white"><b>Let's see what's new</b></h2>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="container-xxl p-5 bg-dark">
+                        <h4 class="text-white">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut mi
+                            eget enim fermentum consequat."</h4>
+                    </div>
+                </div>
+                <iframe src="https://deversatorg.github.io/comino-v1_0-release/" width="600px" height="800px"
+                    style="margin-bottom: 50px;" id="exampleSite"></iframe>
+                <div id="scrollIcon" class="scrollIconClass"
+                    style="display: none; position: fixed; bottom: 20px; right: 20px; text-align: right;">
+                    <a href="#WhoAreWe"><button
+                            style="color:black;background-color:rgb(103, 0, 0); height:50px; width:50px;font-size: larger;"
+                            class="rounded-circle">
+                            👇
+                        </button></a>
+                </div>
+                <script>
+                    function handleIntersection(entries) {
+                        entries.forEach(function (entry) {
+                            if (entry.isIntersecting) {
+                                document.getElementById("scrollIcon").style.display = "block";
+                            } else {
+                                document.getElementById("scrollIcon").style.display = "none";
+                            }
+                        });
+                    }
+
+                    var options = {
+                        root: null,
+                        rootMargin: "0px",
+                        threshold: 0
+                    };
+
+                    var observer = new IntersectionObserver(handleIntersection, options);
+                    observer.observe(document.getElementById("exampleSite"));
+                </script>
             </div>
         </div>
     </section>

@@ -3,16 +3,20 @@
     border-radius: 0;
     border-bottom: 1px solid white;
 }
+
 ::placeholder {
     color: #ffffff;
 }
-.employeeLink:hover{
+
+.employeeLink:hover {
     background-color: yellow;
 }
-.employeeLink{
-    background-color:white;
+
+.employeeLink {
+    background-color: white;
     transition: background-color 0.5s ease-in-out;
 }
-.scrollIconClass{
+
+.scrollIconClass {
     transition: display 0.5s ease-in-out;
 }
