@@ -57,31 +57,117 @@
                 <div class="col-lg-6">
                     <div class="container-xxl p-5 bg-dark d-flex justify-content-between flex-wrap flex-column">
                         <div class="" style="margin-right:15px; margin-bottom:40px">
-                            <img style="height:150px; margin-bottom:10px;" src="images\20230702_175801.jpg"
-                                class="rounded-circle">
-                            <a href="https://www.instagram.com/yaroslav.ryabikov/"><img
-                                    style="height:50px; margin-bottom:10px;" src="images\instaImage.png"
-                                    class="rounded-circle border-black employeeLink"></a>
-                            <a href="https://t.me/RybaFM"><img style="height:50px; margin-bottom:10px;"
-                                    src="images\telegram-icon-512x512-06dzxbpj.png"
-                                    class="rounded-circle border-black employeeLink"></a>
-                            <a href="https://github.com/RybaFM"><img style="height:50px; margin-bottom:10px;"
-                                    src="images\25231.png" class="rounded-circle border-black employeeLink"></a>
+                            <div class="d-flex align-items-center employee-container">
+                                <img style="height:150px; margin-bottom:10px;" src="images\ya.jpg"
+                                    class="rounded-circle">
+                                <div class="column m-2">
+                                    <a href="https://www.instagram.com/yaroslav.ryabikov/"><img
+                                            style="height:50px; margin-bottom:10px;" src="images\instaImage.png"
+                                            class="rounded-circle border-black employeeLink"></a>
+                                    <a href="https://t.me/RybaFM"><img style="height:50px; margin-bottom:10px;"
+                                            src="images\telegram-icon-512x512-06dzxbpj.png"
+                                            class="rounded-circle border-black employeeLink"></a>
+                                    <a href="https://github.com/RybaFM"><img style="height:50px; margin-bottom:10px;"
+                                            src="images\25231.png" class="rounded-circle border-black employeeLink"></a>
+                                </div>
+                            </div>
                             <h3 class="text-white" style="margin-bottom: 10px;"><b>Yaroslav Riabikov<b></h3>
-                            <h6 class="text-white">Languages: C#, JS, TS, Python; Frontend developer(Angular, HTML,
-                                CSS), Backend developer(ASP.NET, Blazor)</h6>
+                            <div>
+                                <h6 class="text-white">
+                                    I am an experienced mid junior programmer specializing in both frontend and backend
+                                    development. My main focus lies in ASP.NET, Blazor, and Angular technologies. </h6>
+                                <div id="hiddenPortfolio" class="hidden-portfolio" style="overflow: auto;">
+                                    <h6 class="text-white">In the
+                                        frontend domain, I possess strong knowledge and hands-on experience with
+                                        Angular. I
+                                        am well-versed in HTML, CSS, and JavaScript, allowing me to create beautiful and
+                                        intuitive user interfaces. On the backend side, I have experience working with
+                                        ASP.NET and Blazor, two powerful tools for web application development. My
+                                        experience includes working with databases, processing requests, and managing
+                                        data.
+                                        Additionally, I have a keen interest and experience in game development,
+                                        particularly with the utilization of the Godot Engine. I have developed several
+                                        game
+                                        projects and have proficient skills in creating game mechanics, resource
+                                        management,
+                                        and implementing visual effects.</h6>
+                                    <div class="skills text-white">
+                                        <h3>Hard Skills</h3>
+                                        <ul>
+                                            <li>.NET, C#, ASP.NET, Entity Framework, SQL</li>
+                                            <li>Angular, JavaScript, TypeScript</li>
+                                            <li>REST, MVC, SOLID, Patterns</li>
+                                            <li>Blazor WASM</li>
+                                            <li>Godot Engine, GDScript</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="skills text-white">
+                                        <h3>Soft Skills</h3>
+                                        <ul>
+                                            <li>Creativity</li>
+                                            <li>Decision-making</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="education text-white">
+                                        <h3>Education Background</h3>
+                                        <p>LIT Dnipro</p>
+                                    </div>
+
+                                    <div class="languages text-white">
+                                        <h3>Languages</h3>
+                                        <ul>
+                                            <li>English (B2 Upper-Intermediate)</li>
+                                            <li>German (A2 Pre-Intermediate)</li>
+                                            <li>Ukrainian (Native speaker)</li>
+                                            <li>Russian (Native speaker)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" id="toggleButton"
+                                        class="rounded-circle bg-dark border text-center" onclick="toggleVisibility()"
+                                        style="color:white;height:35px; width:35px;font-size: larger;border-color: black;">
+                                        <img src="images\13384.png" style="transform: rotate(180deg);height:20px;"
+                                            id="toggleButtonText">
+                                    </button>
+                                </div>
+                                <script>
+                                    function toggleVisibility() {
+                                        var hiddenContent = document.getElementById("hiddenPortfolio");
+                                        var toggleButton = document.getElementById("toggleButton");
+                                        var toggleButtonText = document.getElementById("toggleButtonText");
+
+                                        if (hiddenContent.classList.contains("hidden-portfolio")) {
+                                            hiddenContent.classList.remove("hidden-portfolio");
+                                            hiddenContent.classList.add("visible-portfolio");
+                                            toggleButtonText.style.transform = "rotate(0deg)";
+                                        } else {
+                                            hiddenContent.classList.remove("visible-portfolio");
+                                            hiddenContent.classList.add("hidden-portfolio");
+                                            toggleButtonText.style.transform = "rotate(180deg)";
+                                        }
+                                    }
+                                </script>
+                            </div>
                         </div>
                         <div class="">
-                            <img style="height:150px; margin-bottom:10px;" src="images\20230702_175801.jpg"
-                                class="rounded-circle">
-                            <a href="https://www.instagram.com/_highground_key"><img
-                                    style="height:50px; margin-bottom:10px;" src="images\instaImage.png"
-                                    class="rounded-circle border-black employeeLink"></a>
-                            <a href="https://t.me/deversatorg"><img style="height:50px; margin-bottom:10px;"
-                                    src="images\telegram-icon-512x512-06dzxbpj.png"
-                                    class="rounded-circle border-black employeeLink"></a>
-                            <a href="https://github.com/deversatorg"><img style="height:50px; margin-bottom:10px;"
-                                    src="images\25231.png" class="rounded-circle border-black employeeLink"></a>
+                            <div class="d-flex align-items-center employee-container">
+                                <img style="height:150px; margin-bottom:10px;" src="images\photo_2023-07-16_22-14-24.jpg"
+                                    class="rounded-circle">
+                                <div class="column m-2">
+                                    <a href="https://www.instagram.com/deversatorg/"><img
+                                            style="height:50px; margin-bottom:10px;" src="images\instaImage.png"
+                                            class="rounded-circle border-black employeeLink"></a>
+                                    <a href="https://t.me/deversatorg"><img style="height:50px; margin-bottom:10px;"
+                                            src="images\telegram-icon-512x512-06dzxbpj.png"
+                                            class="rounded-circle border-black employeeLink"></a>
+                                    <a href="https://github.com/deversatorg"><img
+                                            style="height:50px; margin-bottom:10px;" src="images\25231.png"
+                                            class="rounded-circle border-black employeeLink"></a>
+                                </div>
+                            </div>
                             <h3 class="text-white" style="margin-bottom: 10px;"><b>Alex Leguenko<b></h3>
                             <div>
                                 <h6 class="text-white">I’m a strong junior .NET dev looking for new job
@@ -89,37 +175,66 @@
                                     as an engineer. in my spare time I also work on my own
                                     projects, such as applications, e-commerce sites and
                                     games.</h6>
-                                <div id="hiddenPortfolio" style="display: none;">
-                                    <h6 class="text-white">I’m a strong junior .NET dev looking for new job
-                                        opportunities, where I can improve my skills and grow
-                                        as an engineer. in my spare time I also work on my own
-                                        projects, such as applications, e-commerce sites and
-                                        games.</h6>
-                                    <h6 class="text-white">I’m a strong junior .NET dev looking for new job
-                                        opportunities, where I can improve my skills and grow
-                                        as an engineer. in my spare time I also work on my own
-                                        projects, such as applications, e-commerce sites and
-                                        games.</h6>
-                                    <h6 class="text-white">I’m a strong junior .NET dev looking for new job
-                                        opportunities, where I can improve my skills and grow
-                                        as an engineer. in my spare time I also work on my own
-                                        projects, such as applications, e-commerce sites and
-                                        games.</h6>
+                                <div id="hiddenPortfolio1" class="hidden-portfolio">
+                                    <div class="skills text-white">
+                                        <h3>Hard Skills</h3>
+                                        <ul>
+                                            <li>.NET, C#, ASP.NET, Entity Framework, SQL</li>
+                                            <li>Angular, JavaScript, TypeScript</li>
+                                            <li>REST, MVC, SOLID, Patterns</li>
+                                            <li>Blazor WASM</li>
+                                            <li>Docker, VPS/VDS</li>
+                                            <li>Arduino</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="skills text-white">
+                                        <h3>Soft Skills</h3>
+                                        <ul>
+                                            <li>Observation</li>
+                                            <li>Decision-making</li>
+                                            <li>Communicating</li>
+                                            <li>Multi-tasking</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="education text-white">
+                                        <h3>Education Background</h3>
+                                        <p>LIT Dnipro</p>
+                                    </div>
+
+                                    <div class="languages text-white">
+                                        <h3>Languages</h3>
+                                        <ul>
+                                            <li>English (B2 Upper-Intermediate)</li>
+                                            <li>Ukrainian (Native speaker)</li>
+                                            <li>Russian (Native speaker)</li>
+                                        </ul>
+                                    </div>
                                 </div>
                                 <div class="text-center">
-                                    <button type="submit" id="toggleButton" class="rounded-circle bg-dark border" onclick="toggleVisibility()" style="color:white;height:35px; width:35px;font-size: larger;border-color: black;"><p id="toggleButtonText" style="transform: rotate(90deg);">▶</p></button>
+                                    <button type="submit" id="toggleButton1"
+                                        class="rounded-circle bg-dark border text-center" onclick="toggleVisibility1()"
+                                        style="color:white;height:35px; width:35px;font-size: larger;border-color: black;">
+                                        <!-- <p id="toggleButtonText1" style="transform: rotate(90deg);">▶</p> -->
+                                        <img src="images\13384.png" style="transform: rotate(180deg);height:20px;"
+                                            id="toggleButtonText1">
+                                    </button>
                                 </div>
                                 <script>
-                                    function toggleVisibility() {
-                                        var hiddenContent = document.getElementById("hiddenPortfolio");
-                                        var toggleButton = document.getElementById("toggleButton");
-                                        var toggleButtonText = document.getElementById("toggleButtonText");
-                                        if (hiddenContent.style.display === "none") {
-                                            hiddenContent.style.display = "block";
-                                            toggleButtonText.style.transform = "rotate(270deg)";
+                                    function toggleVisibility1() {
+                                        var hiddenContent = document.getElementById("hiddenPortfolio1");
+                                        var toggleButton = document.getElementById("toggleButton1");
+                                        var toggleButtonText = document.getElementById("toggleButtonText1");
+
+                                        if (hiddenContent.classList.contains("hidden-portfolio")) {
+                                            hiddenContent.classList.remove("hidden-portfolio");
+                                            hiddenContent.classList.add("visible-portfolio");
+                                            toggleButtonText.style.transform = "rotate(0deg)";
                                         } else {
-                                            hiddenContent.style.display = "none";
-                                            toggleButtonText.style.transform = "rotate(90deg)";
+                                            hiddenContent.classList.remove("visible-portfolio");
+                                            hiddenContent.classList.add("hidden-portfolio");
+                                            toggleButtonText.style.transform = "rotate(180deg)";
                                         }
                                     }
                                 </script>
@@ -150,7 +265,7 @@
                     style="margin-bottom: 50px;" id="exampleSite"></iframe>
                 <div id="scrollIcon" class="scrollIconClass"
                     style="display: none; position: fixed; bottom: 20px; right: 20px; text-align: right;">
-                    <a href="#WhoAreWe"><button
+                    <a href="#Process"><button
                             style="color:black;background-color:rgb(103, 0, 0); height:50px; width:50px;font-size: larger;"
                             class="rounded-circle">
                             👇

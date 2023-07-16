@@ -20,3 +20,26 @@
 .scrollIconClass {
     transition: display 0.5s ease-in-out;
 }
+
+@media (max-width: 767px) {
+    .employee-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.hidden-portfolio{
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.visible-portfolio{
+    max-height: 1000px; /* Задайте нужную высоту */
+    transition: max-height 0.8s ease-out, opacity 0.8s ease-out;
+    opacity: 1;
+}
+
+
+
