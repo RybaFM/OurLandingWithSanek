@@ -11,36 +11,200 @@
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
 
+<style>
+    @font-face {
+        font-family: 'SF Pro Text';
+        src: url('fonts\\San-Francisco\\San Francisco\\SFUIDisplay\\SFUIDisplay-Bold.ttf') format('truetype');
+        /* Добавьте другие стили шрифта для различных начертаний, если необходимо */
+    }
+
+    .gradient {
+	display: inline-block;
+	position: relative;    
+	line-height: 0;
+    }
+
+    .gradient:after {
+        content: "";
+        display: block;    
+        width: 100%;
+        height: 100%;    
+        position: absolute;
+        top: 0;      
+        left: 0;   
+        background: transparent;
+        background-image: linear-gradient(to left, #212529, #591C1F);
+        opacity: 0.8;
+    }
+
+    /* Стили для прозрачного навбара */
+    .navbar-transparent {
+        background: transparent !important;
+        box-shadow: none !important;
+        position: absolute; /* Position the navbar absolutely */
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 2; /* Set a higher z-index to make sure the navbar appears above the background image */
+    }
+
+    /* Стили для размещения элементов навигации справа */
+    .navbar-nav {
+        margin-left: auto;
+    }
+
+    .navbar-nav .nav-link {
+        margin-right: 15px; /* Increase the space between navigation items */
+        margin-top: 15px;
+    }
+
+    .navbar-toggler::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5); /* Чуть более темный фон */
+        z-index: 1;
+    }
+
+    /* Стили для разделения хедера на левую и правую части */
+    .header-container {
+        display: flex;
+        position: relative;
+    }
+
+    .header-container .left-part {
+        flex: 1;
+        text-align: left;
+    }
+
+    .header-container .right-part {
+        flex: 1;
+        text-align: right;
+    }
+
+    /* Дополнительные стили для левой части хедера */
+    .left-part {
+        position: absolute;
+        top: 50%;
+        left: 10%; /* Смещение левой части вправо на 50px */
+        transform: translateY(-50%);
+        text-align: center;
+        color: white;
+        padding: 20px; /* Отступы для левой части хедера */
+    }
+
+    /* Дополнительные стили для правой части хедера */
+    .right-part {
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        color: white;
+        padding: 20px; /* Отступы для правой части хедера */
+    }
+
+
+    .header-title {
+        font-size: 55px;
+        font-weight: bold;
+        margin-bottom: 25px;
+    }
+
+    .left-part h5 {
+        margin-bottom: 30px;
+    }
+
+    /* Дополнительные стили для контейнера хедера */
+    .header-container {
+        position: relative;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    /* Дополнительные стили для фоновой картинки хедера */
+    .header-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('images/header1.jpg');
+        background-size: cover;
+        background-position: center;
+        z-index: -1; /* Устанавливаем z-index, чтобы фоновая картинка была "под" содержимым */
+    }
+
+    .get-started-button {
+        background-color: #dc3545; /* Красный цвет */
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 50px; /* Закругление краев */
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        text-decoration: none;
+    }
+
+    .get-started-button:hover {
+        background-color: #c82333; /* Цвет кнопки при наведении */
+    }
+
+    .centered{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+</style>
+
 <body>
-    <header style="height: 100vh;" class="text-center">
-        <div class="bg-black">
-            <nav class="navbar navbar-expand-md">
+    <header style="height: 100vh; position: relative;" class="text-center"> <!-- Set position: relative; on the header -->
+        <div class="bg-black text-center">
+            <nav class="navbar navbar-expand-md navbar-transparent"> <!-- Добавлен пользовательский класс -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav" style="font-family: 'Courier New', Courier, monospace;">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav flex-sm-row" style="font-family: 'SF Pro Text', sans-serif;">
                         <li class="nav-item">
-                            <h5><a class="nav-link text-white" href="#OurWork">Our work</a></h5>
+                            <h5><a class="nav-link text-white" href="#OurWork">Our job</a></h5>
                         </li>
                         <li class="nav-item">
-                            <h5><a class="nav-link text-white" href="#WhoAreWe">Who are we?</a></h5>
+                            <h5><a class="nav-link text-white" href="#WhoAreWe">About us</a></h5>
                         </li>
                         <li class="nav-item">
                             <h5><a class="nav-link text-white" href="#Process">The process</a></h5>
                         </li>
                         <li class="nav-item">
-                            <h5><a class="nav-link text-white" href="#Contact">Contact</a></h5>
+                            <h5><a class="nav-link text-white" href="#Contact">Contacts</a></h5>
                         </li>
                     </ul>
                 </div>
             </nav>
         </div>
-        <div class="container-xxl d-flex align-items-center justify-content-center" style="height: 100%;">
-            <div>
-                <img style="height: 50vh;" src="images\Apple_logo_black.svg.png">
-                <h2 class="text-center">We create cutting edge</h2>
+        <div class="header-container">
+            <div class="header-background"></div> <!-- Добавлен новый блок для фоновой картинки -->
+            <!-- Левая часть хедера -->
+            <div class="left-part">
+                <h2 class="header-title">Welcome to Our Website</h2>
+                <h5>Subtitile with some text is here</h5>
+                <a class="get-started-button rounded-pill" href="#Contact">Get Started</a>
+            </div>
+            <!-- Правая часть хедера -->
+            <div class="right-part">
+                <!-- Здесь можете добавить контент для правой части хедера -->
             </div>
         </div>
     </header>
