@@ -70,8 +70,9 @@
         bottom: 0;
         background: rgba(0, 0, 0, 0.5);
         /* Чуть более темный фон */
-        z-index: 1;
+        z-index: -1;
         pointer-events: none;
+        color:rgba(255, 255, 255, 1);
         /* Разрешить событиям клика проходить через псевдоэлемент */
     }
 
@@ -187,16 +188,16 @@
         <div class="bg-black text-center">
             <nav class="navbar navbar-expand-md navbar-transparent"> <!-- Добавлен пользовательский класс -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="color: #fff;background-color: rgba(0, 0, 0, 0.5);border-color: #fff; margin-left:10px">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav flex-sm-row" style="font-family: 'SF Pro Text', sans-serif;">
                         <li class="nav-item">
-                            <h5><a class="nav-link text-white" href="#OurWork">Our job</a></h5>
+                            <h5><a class="nav-link text-white" href="#WhoAreWe">About us</a></h5>
                         </li>
                         <li class="nav-item">
-                            <h5><a class="nav-link text-white" href="#WhoAreWe">About us</a></h5>
+                            <h5><a class="nav-link text-white" href="#OurWork">Our job</a></h5>
                         </li>
                         <li class="nav-item">
                             <h5><a class="nav-link text-white" href="#Process">The process</a></h5>
@@ -433,12 +434,12 @@
                         <h2 class="text-white"><b>Let's see what's new</b></h2>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <!-- <div class="col-lg-6">
                     <div class="container-xxl p-5 bg-dark">
                         <h4 class="text-white">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut mi
                             eget enim fermentum consequat."</h4>
                     </div>
-                </div>
+                </div> -->
                 <iframe src="https://deversatorg.github.io/comino-v1_0-release/" width="600px" height="800px"
                     style="margin-bottom: 50px;" id="exampleSite"></iframe>
                 <div id="scrollIcon" class="scrollIconClass"
