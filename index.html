@@ -9,6 +9,7 @@
     <link href="style.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
 </head>
 
 <style>
@@ -180,6 +181,104 @@
         right: 0;
         margin: auto;
     }
+
+
+    /* your CSS goes here*/
+    .title {
+    color: #fa9746;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.title::before {
+    position: absolute;
+    left: -29px;
+    top: 0;
+    height: 20px;
+    width: 20px;
+    transform: rotate(45deg);
+    background-color: #7499f1;
+    box-shadow: 0px 4px 4px 0px #aaa;
+    border-radius: 4px;
+    content: '';
+}
+
+.title::after {
+    position: absolute;
+    left: -19px;
+    top: 25px;
+    height: 14px;
+    width: 14px;
+    transform: rotate(45deg);
+    background-color: #7499f1;
+    box-shadow: 0px 4px 4px 0px #aaa;
+    border-radius: 4px;
+    content: '';
+}
+
+/* services */
+.services {
+    padding: 40px;
+    position: relative;
+}
+
+.services .square {
+    height: 100px;
+    width: 100px;
+    margin: 30px auto 40px;
+    position: relative;
+    border-radius: 15px;
+    background-color: #7499f1;
+    box-shadow: 0px 0px 27px 0px #ccc;
+    border: 2px dotted #eaf3fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(45deg); /* Keep the rotation for the squares */
+}
+
+.services .square img,
+.services .square i {
+    display: block;
+    color: #eaf3fa;
+    font-size: 40px;
+    transform: rotate(-45deg); /* Rotate the images inside squares back to horizontal */
+}
+
+
+.services .square::before {
+    position: absolute;
+    left: -10px;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #dc3545;
+    content: '';
+}
+
+.services .square::after {
+    position: absolute;
+    left: 50px;
+    top: 66px;
+    width: 1px;
+    height: 88%;
+    background-color: #dc3545;
+    content: '';
+    transform: rotate(90deg);
+}
+
+.services .serv h3 {
+    color: #fa9746;
+}
+
+.services .serv h4 {
+    color: #777;
+}
+
+.services .serv hr {
+    width: 30px;
+    border-top: 3px solid rgb(0 169 211);
+}
 </style>
 
 <body>
@@ -233,7 +332,7 @@
                         <h2 class="text-white"><b>Professionals<br>Programmers<br>Besties</b></h2>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6"> 
                     <div class="container-xxl p-5 bg-dark d-flex justify-content-between flex-wrap flex-column">
                         <div class="" style="margin-right:15px; margin-bottom:40px">
                             <div class="d-flex align-items-center employee-container">
@@ -478,37 +577,37 @@
             <h2>Magic</h2>
         </div>
     </section>
-    <section class="bg-dark" style="font-family: 'Courier New', Courier, monospace;" id="Process">
+    <div class="services pd bg-dark" id="Process">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="container-xxl p-5 bg-dark">
-                        <h3 class="text-white">The Process</h3>
-                        <hr style="width: 10%; border: none; border-top: 3px solid rgb(255, 0, 0);">
-                        <h2 class="text-white"><b>The making of the website</b></h2>
+            <div class="container-xxl p-5 bg-dark">
+                <h3 class="text-white" style="font-family: 'Courier New', Courier, monospace;">The process</h3>
+                <hr style="width: 10%; border: none; border-top: 3px solid rgb(255, 0, 0);">
+            </div>
+            <div class="row text-center d-flex justify-content-center flex-wrap">
+                <div class="col-md-3 flex-column">
+                    <div class="square"><img src="images/icons8-meeting-room-50.png"></div>
+                    <div class="serv">
+                        <h3>Pre production</h3>
+                        <h4>Discussing the design, type, functional of website with the customer</h4>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="container-xxl p-5 bg-dark d-flex justify-content-between flex-wrap flex-column">
-                        <div class="" style="margin-right:15px; margin-bottom:40px">
-                            <h3 class="text-white" style="margin-bottom: 10px;"><b>01 Pre production<b></h3>
-                            <h6 class="text-white">Discussing the design, type, functional of website with the customer
-                            </h6>
-                        </div>
-                        <div class="" style="margin-right:15px; margin-bottom:40px">
-                            <h3 class="text-white" style="margin-bottom: 10px;"><b>02 Production<b></h3>
-                            <h6 class="text-white">Process of developing website by coders</h6>
-                        </div>
-                        <div class="">
-                            <h3 class="text-white" style="margin-bottom: 10px;"><b>03 Post production<b></h3>
-                            <h6 class="text-white">Discussing the website with customer, correcting mistakes, editing
-                            </h6>
-                        </div>
+                <div class="col-md-3 flex-column">
+                    <div class="square"><img src="images/icons8-developing-64.png"></div>
+                    <div class="serv">
+                        <h3>Production</h3>
+                        <h4>Process of developing website by coders</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 flex-column">
+                    <div class="square"><img src="images/icons8-done-50.png"></div>
+                    <div class="serv">
+                        <h3>Post production</h3>
+                        <h4>Discussing the website with customer, correcting mistakes, editing</h4>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <section class="bg-dark" style="font-family: 'Courier New', Courier, monospace;" id="Contact">
         <div class="container">
             <div class="row">
@@ -547,6 +646,7 @@
             </div>
         </div>
     </section>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
         </script>
