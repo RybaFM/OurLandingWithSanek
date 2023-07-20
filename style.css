@@ -47,3 +47,19 @@
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' width='30' height='30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     filter: invert(1);
 }
+
+.custom-button-container .custom-btn {
+    width: 100%;
+    background-color: #dc3545;
+    border-color:#dc3545;
+    /* Любой другой цвет, который вам нужен */
+    /* Дополнительные стили, если необходимо */
+}
+.custom-button-container .custom-btn:hover {
+    width: 100%;
+    background-color: #ff0019;
+    border-color:#ff0019;
+    transition: background-color 0.5s ease-in-out;
+    /* Любой другой цвет, который вам нужен */
+    /* Дополнительные стили, если необходимо */
+}
