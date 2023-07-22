@@ -9,7 +9,7 @@
 }
 
 .employeeLink:hover {
-    background-color: yellow;
+    background-color: #dc3545;
 }
 
 .employeeLink {
@@ -51,15 +51,93 @@
 .custom-button-container .custom-btn {
     width: 100%;
     background-color: #dc3545;
-    border-color:#dc3545;
+    border-color: #dc3545;
     /* Любой другой цвет, который вам нужен */
     /* Дополнительные стили, если необходимо */
 }
+
 .custom-button-container .custom-btn:hover {
     width: 100%;
     background-color: #ff0019;
-    border-color:#ff0019;
+    border-color: #ff0019;
     transition: background-color 0.5s ease-in-out;
     /* Любой другой цвет, который вам нужен */
     /* Дополнительные стили, если необходимо */
+}
+
+
+
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+    backdrop-filter: blur(5px);
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.popup h2 {
+    margin-top: 0;
+}
+
+.popup p {
+    margin-bottom: 20px;
+}
+
+.popup button {
+    cursor: pointer;
+}
+
+#openButton {
+    margin-top: 20px;
+}
+
+#closeButton {
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+#closeButton:hover {
+    background-color: #d43d1a;
+}
+
+.employeeWindow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow-y: auto;
+    max-height: 80vh;
+}
+
+/* Стили для мобильных устройств */
+@media screen and (max-width: 767px) {
+    .employeeWindow {
+        flex-direction: column;
+        align-items: center;
+    }
+    .popup{
+        width:90%
+    }
+
+    .col-lg-5,
+    .col-lg-6 {
+        width: 100%;
+    }
 }
