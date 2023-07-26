@@ -360,7 +360,6 @@
                                     development. My main focus lies in ASP.NET, Blazor, and Angular technologies. </h6>
                                 <div class="text-center">
                                     <button type="submit" id="openButton" class="rounded-circle border text-center"
-                                        onclick="toggleVisibility()"
                                         style="color:#d43d1a;height:35px; width:35px;font-size: larger;border:none">
                                         <img src="images\246702.png" style="height:20px;" id="toggleButtonText">
                                     </button>
@@ -662,7 +661,7 @@
         </div>
     </section>
     <div class="overlay" id="overlay">
-        <div class="popup bg-dark">
+        <div class="popup bg-dark grow-popup">
             <div class="employeeWindow">
                 <div class="col-lg-5">
                     <div class="d-flex align-items-center employee-container">
@@ -729,7 +728,7 @@
                 </div>
             </div>
 
-            <button id="closeButton">Close</button>
+            <button id="closeButton" style="margin-top:20px;">Close</button>
         </div>
     </div>
     <script>

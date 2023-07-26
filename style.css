@@ -87,6 +87,33 @@
     transform: translate(-50%, -50%);
     padding: 20px;
     border-radius: 8px;
+    animation: grow 0.5s ease-in-out;
+}
+
+@keyframes grow {
+    from {
+        transform: scale(0.1);
+        opacity: 0;
+        transform: translate(-50%, -100%);
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes down {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, -0%);
+    }
 }
 
 .popup h2 {
@@ -132,8 +159,9 @@
         flex-direction: column;
         align-items: center;
     }
-    .popup{
-        width:90%
+
+    .popup {
+        width: 90%
     }
 
     .col-lg-5,
