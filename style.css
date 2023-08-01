@@ -177,3 +177,29 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.container{
+    background-color: rgba(22, 25, 33, 0.7);
+}
+.exampleSiteClass{
+    height:80vh;
+}
+.borderFooter{
+    border-style:solid;
+    border-width: 3px;
+    background-color:white;
+    border-color:rgba(255,255,255,0)
+}
+.borderFooterGmail{
+    background-color: black;
+    border-style:solid;
+    border-width: 3px;
+    border-color:rgba(255, 255, 255, 1)
+}
+.footerTel:hover{
+    color:#dc3545;
+    transition: color 0.5s ease-in-out
+}
+.footerTel{
+    text-decoration: none;
+    color:white;
+}
